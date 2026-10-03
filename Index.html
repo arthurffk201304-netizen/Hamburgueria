@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Brasa Burger — Hambúrguer artesanal, pedidos online e muito sabor.">
+
+    <title>Brasa Burger | O sabor que chega até você</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div id="toastContainer"></div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="header" id="header">
+
+    <div class="container nav">
+
+        <a href="#inicio" class="logo">
+            <span>BRASA</span>
+            <strong>BURGER</strong>
+        </a>
+
+        <nav class="desktop-menu">
+
+            <a href="#inicio">Início</a>
+
+            <a href="#cardapio">Cardápio</a>
+
+            <a href="#ofertas">Ofertas</a>
+
+            <a href="#acompanhar">Acompanhar</a>
+
+            <a href="#sobre">Sobre nós</a>
+
+            <a href="#contato">Contato</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button
+                class="support-button"
+                onclick="abrirSuporte()">
+
+                🤖
+                <span>Suporte</span>
+
+            </button>
+
+            <button
+                class="cart-button"
+                onclick="abrirCarrinho()">
+
+                🛒
+
+                <span class="cart-counter"
+                      id="headerCartCount">
+                    0
+                </span>
+
+            </button>
+
+            <button
+                class="mobile-menu-button"
+                onclick="toggleMobileMenu()">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- MENU MOBILE -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#inicio" onclick="fecharMobileMenu()">
+            Início
+        </a>
+
+        <a href="#cardapio" onclick="fecharMobileMenu()">
+            Cardápio
+        </a>
+
+        <a href="#ofertas" onclick="fecharMobileMenu()">
+            Ofertas
+        </a>
+
+        <a href="#acompanhar" onclick="fecharMobileMenu()">
+            Acompanhar pedido
+        </a>
+
+        <a href="#sobre" onclick="fecharMobileMenu()">
+            Sobre nós
+        </a>
+
+        <a href="#contato" onclick="fecharMobileMenu()">
+            Contato
+        </a>
+
+        <button onclick="abrirSuporte(); fecharMobileMenu()">
+            🤖 Suporte
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section class="hero" id="inicio">
+
+    <div class="hero-background"></div>
+
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                🔥 SABOR DE BRASA
+            </div>
+
+            <h1>
+                O sabor que
+                <span>chega até você.</span>
+            </h1>
+
+            <p>
+                Hambúrguer artesanal, ingredientes selecionados
+                e aquele sabor de brasa que transforma qualquer fome.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#cardapio"
+                   class="button button-primary">
+
+                    🍔 Pedir agora
+
+                </a>
+
+                <a href="#cardapio"
+                   class="button button-white">
+
+                    Ver cardápio
+
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Artesanal</span>
+                </div>
+
+                <div>
+                    <strong>🔥</strong>
+                    <span>Na brasa</span>
+                </div>
+
+                <div>
+                    <strong>🛵</strong>
+                    <span>Delivery</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-food">
+
+            <div class="hero-circle"></div>
+
+            <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=90"
+                alt="Hambúrguer artesanal com queijo">
+
+            <div class="hero-fries">
+                🍟
+            </div>
+
+            <div class="hero-price">
+
+                <small>A PARTIR DE</small>
+
+                <strong>
+                    R$ 24,90
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     BENEFÍCIOS
+========================================================= -->
+
+<section class="benefits">
+
+    <div class="container benefits-grid">
+
+        <div class="benefit">
+            <div class="benefit-icon">
+                🔥
+            </div>
+
+            <div>
+                <strong>Feito na brasa</strong>
+                <span>Sabor marcante</span>
+            </div>
+        </div>
+
+
+        <div class="benefit">
+            <div class="benefit-icon">
+                🥩
+            </div>
+
+            <div>
+                <strong>Ingredientes selecionados</strong>
+                <span>Qualidade em cada pedido</span>
+            </div>
+        </div>
+
+
+        <div class="benefit">
+            <div class="benefit-icon">
+                🛵
+            </div>
+
+            <div>
+                <strong>Pedido fácil</strong>
+                <span>Do cardápio até sua casa</span>
+            </div>
+        </div>
+
+
+        <div class="benefit">
+            <div class="benefit-icon">
+                💳
+            </div>
+
+            <div>
+                <strong>Pagamento fácil</strong>
+                <span>PIX, cartão ou dinheiro</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CARDÁPIO
+========================================================= -->
+
+<section class="menu-section" id="cardapio">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-kicker">
+                    NOSSO CARDÁPIO
+                </span>
+
+                <h2>
+                    Escolha sua
+                    <strong>brasa.</strong>
+                </h2>
+
+                <p>
+                    Seu próximo favorito está a poucos cliques.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- BUSCA -->
+
+        <div class="menu-tools">
+
+            <div class="search-box">
+
+                <span>🔎</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Buscar no cardápio..."
+                    oninput="renderProducts()">
+
+            </div>
+
+
+            <select
+                id="sortSelect"
+                onchange="renderProducts()">
+
+                <option value="default">
+                    Mais populares
+                </option>
+
+                <option value="low">
+                    Menor preço
+                </option>
+
+                <option value="high">
+                    Maior preço
+                </option>
+
+                <option value="name">
+                    Nome A-Z
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- CATEGORIAS -->
+
+        <div class="categories">
+
+            <button
+                class="category active"
+                data-category="todos"
+                onclick="setCategory('todos')">
+
+                🍽️ Todos
+
+            </button>
+
+            <button
+                class="category"
+                data-category="hamburgueres"
+                onclick="setCategory('hamburgueres')">
+
+                🍔 Hambúrgueres
+
+            </button>
+
+            <button
+                class="category"
+                data-category="combos"
+                onclick="setCategory('combos')">
+
+                🍟 Combos
+
+            </button>
+
+            <button
+                class="category"
+                data-category="acompanhamentos"
+                onclick="setCategory('acompanhamentos')">
+
+                🍟 Acompanhamentos
+
+            </button>
+
+            <button
+                class="category"
+                data-category="bebidas"
+                onclick="setCategory('bebidas')">
+
+                🥤 Bebidas
+
+            </button>
+
+            <button
+                class="category"
+                data-category="sobremesas"
+                onclick="setCategory('sobremesas')">
+
+                🍦 Sobremesas
+
+            </button>
+
+        </div>
+
+
+        <!-- PRODUTOS -->
+
+        <div
+            class="products-grid"
+            id="productsGrid">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     OFERTAS
+========================================================= -->
+
+<section class="offers-section" id="ofertas">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="section-kicker">
+                🔥 OFERTAS DA BRASA
+            </span>
+
+            <h2>
+                Fome grande?
+                <strong>Preço menor.</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="offers-grid">
+
+            <div class="offer-card offer-yellow">
+
+                <div class="offer-content">
+
+                    <span class="offer-label">
+                        OFERTA
+                    </span>
+
+                    <h3>
+                        Combo Bacon
+                    </h3>
+
+                    <p>
+                        Brasa Bacon + batata média
+                        + bebida.
+                    </p>
+
+                    <div class="offer-price">
+
+                        <del>R$ 39,90</del>
+
+                        <strong>R$ 32,90</strong>
+
+                    </div>
+
+                    <button
+                        onclick="adicionarPorId(7)"
+                        class="offer-button">
+
+                        Quero essa oferta
+
+                    </button>
+
+                </div>
+
+                <div class="offer-emoji">
+                    🍔
+                </div>
+
+            </div>
+
+
+            <div class="offer-card offer-red">
+
+                <div class="offer-content">
+
+                    <span class="offer-label">
+                        FAMÍLIA
+                    </span>
+
+                    <h3>
+                        Combo Família
+                    </h3>
+
+                    <p>
+                        4 hambúrgueres + 2 batatas
+                        + 4 bebidas.
+                    </p>
+
+                    <div class="offer-price">
+
+                        <del>R$ 119,90</del>
+
+                        <strong>R$ 94,90</strong>
+
+                    </div>
+
+                    <button
+                        onclick="adicionarPorId(10)"
+                        class="offer-button">
+
+                        Quero essa oferta
+
+                    </button>
+
+                </div>
+
+                <div class="offer-emoji">
+                    🍟
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CLUBE BRASA
+========================================================= -->
+
+<section class="club-section">
+
+    <div class="container club-card">
+
+        <div class="club-icon">
+            ⭐
+        </div>
+
+        <div class="club-content">
+
+            <span>
+                CLUBE BRASA
+            </span>
+
+            <h2>
+                Quanto mais você pede,
+                <strong>mais perto da recompensa.</strong>
+            </h2>
+
+            <p>
+                Acumule pontos em seus pedidos e acompanhe
+                seu progresso direto pelo navegador.
+            </p>
+
+            <div class="points-bar">
+
+                <div class="points-top">
+                    <strong id="clubPoints">
+                        120 pontos
+                    </strong>
+
+                    <span>
+                        200 pontos
+                    </span>
+                </div>
+
+                <div class="progress">
+                    <div
+                        id="clubProgress"
+                        style="width:60%">
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="points-message">
+                Mais 80 pontos para ganhar uma recompensa.
+            </p>
+
+        </div>
+
+        <div class="club-reward">
+            🎁
+            <strong>
+                R$ 15 OFF
+            </strong>
+            <span>
+                próxima recompensa
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ACOMPANHAR PEDIDO
+========================================================= -->
+
+<section class="tracking-section" id="acompanhar">
+
+    <div class="container">
+
+        <div class="tracking-box">
+
+            <div class="section-heading centered">
+
+                <span class="section-kicker">
+                    📦 ACOMPANHAMENTO
+                </span>
+
+                <h2>
+                    Acompanhe seu
+                    <strong>pedido.</strong>
+                </h2>
+
+                <p>
+                    Digite o número do pedido para ver o andamento.
+                </p>
+
+            </div>
+
+
+            <div class="tracking-form">
+
+                <input
+                    id="trackingInput"
+                    type="text"
+                    placeholder="Ex: 1024">
+
+                <button
+                    onclick="acompanharPedido()"
+                    class="button button-primary">
+
+                    Acompanhar
+
+                </button>
+
+            </div>
+
+
+            <div
+                id="trackingResult"
+                class="tracking-result hidden">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SOBRE
+========================================================= -->
+
+<section class="about-section" id="sobre">
+
+    <div class="container about-grid">
+
+        <div class="about-images">
+
+            <img
+                class="about-main-image"
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=85"
+                alt="Hambúrguer artesanal">
+
+            <div class="about-small-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=85"
+                    alt="Batatas fritas">
+
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <span class="section-kicker">
+                CONHEÇA A BRASA
+            </span>
+
+            <h2>
+                Uma hamburgueria
+                feita para
+                <strong>quem ama sabor.</strong>
+            </h2>
+
+            <p>
+                A Brasa Burger é uma hamburgueria fictícia criada
+                para demonstrar uma experiência moderna de pedidos
+                online.
+            </p>
+
+            <p>
+                Nossa proposta combina hambúrguer artesanal,
+                ingredientes selecionados, preparação na brasa
+                e uma experiência simples para o cliente.
+            </p>
+
+            <div class="about-features">
+
+                <div>
+                    <strong>🔥</strong>
+                    <span>Preparação na brasa</span>
+                </div>
+
+                <div>
+                    <strong>🥩</strong>
+                    <span>Ingredientes selecionados</span>
+                </div>
+
+                <div>
+                    <strong>❤️</strong>
+                    <span>Atendimento próximo</span>
+                </div>
+
+                <div>
+                    <strong>⚡</strong>
+                    <span>Pedido fácil</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTATO
+========================================================= -->
+
+<section class="contact-section" id="contato">
+
+    <div class="container contact-grid">
+
+        <div>
+
+            <span class="section-kicker">
+                FALE COM A BRASA
+            </span>
+
+            <h2>
+                Ficou com
+                <strong>alguma dúvida?</strong>
+            </h2>
+
+            <p>
+                Nossa equipe está pronta para ajudar.
+            </p>
+
+        </div>
+
+
+        <div class="contact-cards">
+
+            <a
+                href="https://wa.me/552299352900"
+                target="_blank"
+                class="contact-card">
+
+                <span>📱</span>
+
+                <div>
+                    <small>WHATSAPP</small>
+                    <strong>22 99935-2900</strong>
+                </div>
+
+            </a>
+
+
+            <div class="contact-card">
+
+                <span>🕐</span>
+
+                <div>
+                    <small>HORÁRIO</small>
+                    <strong>Defina aqui o horário</strong>
+                </div>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <span>📍</span>
+
+                <div>
+                    <small>LOCALIZAÇÃO</small>
+                    <strong>Região dos Lagos - RJ</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     REDES SOCIAIS
+========================================================= -->
+
+<section class="social-section">
+
+    <div class="container social-inner">
+
+        <div>
+            <span class="section-kicker">
+                SIGA A BRASA BURGER
+            </span>
+
+            <h2>
+                Acompanhe nossas
+                <strong>novidades.</strong>
+            </h2>
+        </div>
+
+        <div class="social-links">
+
+            <a href="#"
+               id="instagramLink"
+               target="_blank">
+
+                Instagram
+
+            </a>
+
+            <a href="#"
+               id="tiktokLink"
+               target="_blank">
+
+                TikTok
+
+            </a>
+
+            <a href="#"
+               id="facebookLink"
+               target="_blank">
+
+                Facebook
+
+            </a>
+
+            <a
+                href="https://wa.me/552299352900"
+                target="_blank">
+
+                WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="#inicio" class="logo">
+                <span>BRASA</span>
+                <strong>BURGER</strong>
+            </a>
+
+            <p>
+                O sabor que chega até você.
+            </p>
+
+            <a
+                class="footer-whatsapp"
+                href="https://wa.me/552299352900"
+                target="_blank">
+
+                📱 22 99935-2900
+
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Navegação</h3>
+
+            <a href="#cardapio">
+                Cardápio
+            </a>
+
+            <a href="#ofertas">
+                Ofertas
+            </a>
+
+            <a href="#acompanhar">
+                Acompanhar pedido
+            </a>
+
+            <a href="#sobre">
+                Sobre nós
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Atendimento</h3>
+
+            <a href="#contato">
+                Contato
+            </a>
+
+            <a
+                href="https://wa.me/552299352900"
+                target="_blank">
+
+                WhatsApp
+            </a>
+
+            <button onclick="abrirSuporte()">
+                🤖 Suporte
+            </button>
+
+            <button onclick="abrirAdmin()">
+                👨‍💼 Área administrativa
+            </button>
+
+        </div>
+
+
+        <div>
+
+            <h3>Informações</h3>
+
+            <a href="#">
+                Termos
+            </a>
+
+            <a href="#">
+                Privacidade
+            </a>
+
+            <a href="#">
+                Site demonstrativo
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        Brasa Burger — Site demonstrativo.
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     WHATSAPP FLUTUANTE
+========================================================= -->
+
+<a
+    class="whatsapp-float"
+    href="https://wa.me/552299352900"
+    target="_blank">
+
+    <span>📱</span>
+
+    <strong>
+        Falar no WhatsApp
+    </strong>
+
+</a>
+
+
+<!-- =========================================================
+     MODAL PRODUTO
+========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="productModal">
+
+    <div class="modal product-modal">
+
+        <button
+            class="modal-close"
+            onclick="fecharModal('productModal')">
+
+            ×
+
+        </button>
+
+        <div id="productModalContent"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CARRINHO
+========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="cartModal">
+
+    <div class="modal cart-modal">
+
+        <button
+            class="modal-close"
+            onclick="fecharModal('cartModal')">
+
+            ×
+
+        </button>
+
+        <div class="modal-header">
+
+            <span>🛒</span>
+
+            <div>
+                <h2>
+                    Seu carrinho
+                </h2>
+
+                <p>
+                    Revise seu pedido antes de continuar.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div id="cartItems"></div>
+
+
+        <div class="coupon-box">
+
+            <input
+                id="couponInput"
+                placeholder="Cupom de desconto">
+
+            <button onclick="aplicarCupom()">
+                Aplicar
+            </button>
+
+        </div>
+
+
+        <div class="cart-summary">
+
+            <div>
+                <span>Subtotal</span>
+                <strong id="subtotalValue">
+                    R$ 0,00
+                </strong>
+            </div>
+
+            <div>
+                <span>Entrega</span>
+                <strong id="deliveryValue">
+                    R$ 5,00
+                </strong>
+            </div>
+
+            <div>
+                <span>Desconto</span>
+                <strong id="discountValue">
+                    R$ 0,00
+                </strong>
+            </div>
+
+            <div class="cart-total-line">
+                <span>Total</span>
+                <strong id="totalValue">
+                    R$ 0,00
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="cart-actions">
+
+            <button
+                class="button button-outline"
+                onclick="fecharModal('cartModal')">
+
+                Continuar comprando
+
+            </button>
+
+            <button
+                class="button button-primary"
+                onclick="abrirCheckout()">
+
+                Finalizar pedido
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CHECKOUT
+========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="checkoutModal">
+
+    <div class="modal checkout-modal">
+
+        <button
+            class="modal-close"
+            onclick="fecharModal('checkoutModal')">
+
+            ×
+
+        </button>
+
+        <div class="modal-header">
+
+            <span>📋</span>
+
+            <div>
+                <h2>
+                    Finalizar pedido
+                </h2>
+
+                <p>
+                    Preencha seus dados.
+                </p>
+            </div>
+
+        </div>
+
+
+        <form
+            id="checkoutForm"
+            onsubmit="finalizarPedido(event)">
+
+            <div class="form-grid">
+
+                <div class="form-group full">
+                    <label>Nome</label>
+
+                    <input
+                        id="customerName"
+                        required
+                        placeholder="Seu nome">
+                </div>
+
+
+                <div class="form-group">
+                    <label>WhatsApp</label>
+
+                    <input
+                        id="customerPhone"
+                        required
+                        placeholder="(22) 99999-9999">
+                </div>
+
+
+                <div class="form-group">
+                    <label>Bairro</label>
+
+                    <input
+                        id="customerNeighborhood"
+                        required
+                        placeholder="Seu bairro">
+                </div>
+
+
+                <div class="form-group">
+                    <label>Endereço</label>
+
+                    <input
+                        id="customerAddress"
+                        required
+                        placeholder="Rua / Avenida">
+                </div>
+
+
+                <div class="form-group">
+                    <label>Número</label>
+
+                    <input
+                        id="customerNumber"
+                        required
+                        placeholder="Número">
+                </div>
+
+
+                <div class="form-group full">
+                    <label>Complemento</label>
+
+                    <input
+                        id="customerComplement"
+                        placeholder="Apartamento, casa, referência...">
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label>
+                        Observações
+                    </label>
+
+                    <textarea
+                        id="customerNotes"
+                        placeholder="Alguma observação sobre seu pedido?">
+                    </textarea>
+
+                </div>
+
+            </div>
+
+
+            <h3 class="payment-title">
+                Forma de pagamento
+            </h3>
+
+
+            <div class="payment-options">
+
+                <label class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="PIX"
+                        checked>
+
+                    <span>
+                        💠 PIX
+                    </span>
+
+                </label>
+
+
+                <label class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="Dinheiro">
+
+                    <span>
+                        💵 Dinheiro
+                    </span>
+
+                </label>
+
+
+                <label class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="Cartão">
+
+                    <span>
+                        💳 Cartão
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="button button-primary checkout-button">
+
+                Confirmar pedido
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PIX
+========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="pixModal">
+
+    <div class="modal pix-modal">
+
+        <div class="pix-icon">
+            💠
+        </div>
+
+        <span class="section-kicker">
+            PAGAMENTO
+        </span>
+
+        <h2>
+            Pague pelo PIX
+        </h2>
+
+        <p>
+            Pedido
+            <strong id="pixOrderNumber">
+                #0000
+            </strong>
+        </p>
+
+
+        <div class="pix-key">
+
+            <small>
+                CHAVE PIX
+            </small>
+
+            <strong>
+                22999352900
+            </strong>
+
+            <button onclick="copiarPix()">
+                📋 Copiar chave PIX
+            </button>
+
+        </div>
+
+
+        <p class="pix-identification">
+            Nome/identificação:
+            <strong>
+                Brasa Burger
+            </strong>
+        </p>
+
+
+        <div class="pix-warning">
+
+            Após realizar o pagamento,
+            envie o comprovante pelo WhatsApp.
+
+        </div>
+
+
+        <div class="pix-actions">
+
+            <a
+                id="whatsappProof"
+                href="#"
+                target="_blank"
+                class="button button-primary">
+
+                📱 Enviar comprovante
+
+            </a>
+
+            <button
+                onclick="fecharModal('pixModal')"
+                class="button button-outline">
+
+                Fechar
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     SUPORTE
+========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="supportModal">
+
+    <div class="modal support-modal">
+
+        <button
+            class="modal-close"
+            onclick="fecharModal('supportModal')">
+
+            ×
+
+        </button>
+
+
+        <div class="support-header">
+
+            <div class="support-avatar">
+                🤖
+            </div>
+
+            <div>
+
+                <strong>
+                    Suporte Brasa
+                </strong>
+
+                <span>
+                    Online agora
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="chat-messages"
+            id="chatMessages">
+
+            <div class="bot-message">
+
+                Olá! 👋
+                <br><br>
+
+                Sou o suporte automático da Brasa Burger.
+                Como posso ajudar?
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-questions">
+
+            <button onclick="perguntaSuporte('horario')">
+                🕐 Horário
+            </button>
+
+            <button onclick="perguntaSuporte('entrega')">
+                🛵 Entrega
+            </button>
+
+            <button onclick="perguntaSuporte('cardapio')">
+                🍔 Cardápio
+            </button>
+
+            <button onclick="perguntaSuporte('pix')">
+                💠 PIX
+            </button>
+
+        </div>
+
+
+        <div class="chat-input">
+
+            <input
+                id="supportInput"
+                placeholder="Digite sua dúvida..."
+                onkeydown="if(event.key==='Enter') enviarPergunta()">
+
+            <button onclick="enviarPergunta()">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     ADMIN
+========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="adminModal">
+
+    <div class="modal admin-modal">
+
+        <button
+            class="modal-close"
+            onclick="fecharModal('adminModal')">
+
+            ×
+
+        </button>
+
+
+        <div class="admin-header">
+
+            <div>
+
+                <span class="section-kicker">
+                    PAINEL DO DONO
+                </span>
+
+                <h2>
+                    Administração
+                </h2>
+
+            </div>
+
+            <button
+                onclick="renderAdmin()"
+                class="refresh-button">
+
+                🔄 Atualizar
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="admin-stats"
+            id="adminStats">
+
+        </div>
+
+
+        <div
+            class="admin-orders"
+            id="adminOrders">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
